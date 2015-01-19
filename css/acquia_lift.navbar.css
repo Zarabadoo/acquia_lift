@@ -99,14 +99,18 @@
   display: inline-block;
 }
 #navbar-administration .navbar-tray-acquia-lift.navbar-tray-horizontal .acquia-lift-personalize-type-count span {
-  background-color: #85A810;
+  background-color: #85b200;
   border-radius: 1em;
-  color: white;
+  color: #fff;
   padding: 0 0.35em;
   font-weight: bold;
 }
 #navbar-administration .navbar-tray-acquia-lift.navbar-tray-horizontal .acquia-lift-personalize-type-count.acquia-lift-empty span {
-  background-color: gray;
+  background-color: #ccc;
+}
+#navbar-administration .navbar-tray-acquia-lift.navbar-tray-horizontal .acquia-lift-content-variation {
+  border-top: 0.1em solid #ccc;
+  background-color: #eee;
 }
 
 /* Campaign drop-down */
@@ -138,10 +142,15 @@
   width: 4em;
 }
 #navbar-administration .navbar-tray-horizontal .acquia-lift-menu-item .acquia-lift-preview-option {
-  margin-right: -8em;
-  padding-right: 8em;
+  margin-right: -10em;
+  padding-right: 10em;
 }
-#navbar-administration .navbar-tray-horizontal .acquia-lift-menu-item .acquia-lift-variation-delete,
+#navbar-administration .navbar-tray-horizontal .acquia-lift-menu-item .acquia-lift-variation-edit {
+  width: 2em;
+}
+#navbar-administration .navbar-tray-horizontal .acquia-lift-menu-item .acquia-lift-variation-delete {
+  width: 3.5em;
+}
 #navbar-administration .navbar-tray-horizontal .acquia-lift-menu-item .acquia-lift-variation-rename {
   width: 4em;
 }
@@ -179,10 +188,11 @@
 #navbar-administration .navbar-tray-horizontal .menu ul li.last {
   padding-top: .6em;
 }
+#navbar-administration .acquia-lift-variation-add:before,
 #navbar-administration .acquia-lift-menu-create:before {
   content: '+';
   font-weight: bold;
-  font-size: 1.667em;
+  font-size: 1.3em;
   line-height: 0.89982;
   padding-right: 0.2em;
   vertical-align: text-bottom;
@@ -233,10 +243,6 @@
 #navbar-administration .acquia-lift-option-sets-list,
 #navbar-administration .acquia-lift-option-sets-list span {
   line-height: 1.2;
-}
-#navbar-administration .acquia-lift-option-sets-list .acquia-lift-personalize-type-count:not(.acquia-lift-empty) {
-  position: relative;
-  top: -.2em;
 }
 #navbar-administration .acquia-lift-active-container {
   position: relative;

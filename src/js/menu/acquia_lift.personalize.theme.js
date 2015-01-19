@@ -398,7 +398,7 @@
       'href="' + editHref + '"'
     ].concat(ariaAttrs);
 
-    item += '<li>\n<div class="acquia-lift-menu-item">';
+    item += '<li>\n<div class="acquia-lift-menu-item clearfix">';
     item += '<a ' + previewAttrs.join(' ') + '>' + options.label + '</a> \n';
 
     if (options.id !== Drupal.settings.personalize.controlOptionName) {
